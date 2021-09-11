@@ -1,0 +1,12 @@
+server:
+  port: 9090
+eureka:  client:    service-url:      defaultZone: ${DISCOVERY_URL:http://localhost:1111}/eureka/  instance:    hostname: localhost
+spring:  application:    name: API-GATEWAY  main:    web-application-type: reactive  cloud:    gateway:      discovery:        locator:          enabled: true
+          lower-case-service-id: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        

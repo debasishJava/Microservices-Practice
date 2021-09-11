@@ -1,0 +1,6 @@
+server:
+  port: 1113
+  
+eureka:  client:    service-url:      defaultZone: ${DISCOVERY_URL:http://localhost:1111}/eureka/
+      
+spring:  application:    name: WELCOME-API

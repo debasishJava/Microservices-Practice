@@ -1,0 +1,6 @@
+server:
+  port: 1112
+  
+eureka:  client:    service-url:      defaultZone: ${DISCOVERY_URL:http://localhost:1111}/eureka/
+      
+spring:  application:    name: GREET-API
